@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1> Here is a list of all availible puppies: </h1>
+<ol>
+{% for pup in puppies %}
+
+<li> {{pup}} </li>
+
+{% endfor %}
+</ol>
+{% endblock %}
